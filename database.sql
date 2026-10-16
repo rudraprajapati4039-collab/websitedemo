@@ -1,0 +1,33 @@
+CREATE TABLE IF NOT EXISTS admins (
+  phone TEXT PRIMARY KEY,
+  salt  TEXT NOT NULL,
+  hash  TEXT NOT NULL
+);
+CREATE TABLE IF NOT EXISTS requests (
+  id         INTEGER PRIMARY KEY AUTOINCREMENT,
+  name       TEXT NOT NULL,
+  phone      TEXT NOT NULL,
+  email      TEXT NOT NULL,
+  address    TEXT NOT NULL,
+  service    TEXT NOT NULL,
+  message    TEXT,
+  aadhaar    TEXT NOT NULL,
+  pan        TEXT NOT NULL,
+  photo      TEXT NOT NULL,
+  status     TEXT NOT NULL DEFAULT 'New',
+  created_at DATETIME DEFAULT CURRENT_TIMESTAMP
+);
+
+CREATE TABLE IF NOT EXISTS services (
+  id   INTEGER PRIMARY KEY AUTOINCREMENT,
+  icon TEXT,
+  name TEXT NOT NULL
+);
+CREATE TABLE IF NOT EXISTS gallery (
+  id   INTEGER PRIMARY KEY AUTOINCREMENT,
+  file TEXT NOT NULL
+);
+CREATE TABLE IF NOT EXISTS settings (
+  key   TEXT PRIMARY KEY,
+  value TEXT
+);
