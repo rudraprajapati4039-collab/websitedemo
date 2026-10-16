@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>CSC Login – Nishtha Enterprise</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Mukta:wght@400;600;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header><div class="wrap"><b class="brand">Nishtha Enterprise CSC</b><nav><a href="index.html">Back to website</a></nav></div></header>
+<main class="login wrap">
+<form id="loginForm">
+<h2>CSC login</h2><p class="sub">For Nishtha Enterprise staff only.</p>
+<label for="lp">Phone number</label>
+<input id="lp" inputmode="numeric" pattern="[0-9]{10}" maxlength="10" required autocomplete="username" autofocus>
+<label for="lw">Password</label>
+<input id="lw" type="password" required autocomplete="current-password">
+<label class="pw"><input type="checkbox" id="showpw"> Show password</label>
+<p style="margin-top:18px"><button class="btn" type="submit">Log in</button></p>
+<div id="msg" role="alert"></div>
+<a class="back" href="index.html">Go to home page</a>
+</form>
+</main>
+<script src="script.js"></script>
+</body></html>

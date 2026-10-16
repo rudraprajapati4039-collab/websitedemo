@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>CSC Panel – Nishtha Enterprise</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Mukta:wght@400;600;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header><div class="wrap"><b class="brand">Nishtha Enterprise CSC</b><nav><a href="index.html">Public site</a><a href="#" id="logout">Log out</a></nav></div></header>
+<div class="wrap" style="padding-top:30px;padding-bottom:40px"><h2>Customer applications</h2><p class="sub" id="count"></p>
+<div class="panel tbl"><table><thead><tr><th>Date</th><th>Customer</th><th>Service</th><th>Documents</th><th>Status</th><th></th></tr></thead><tbody id="rows"></tbody></table></div>
+<h2 style="margin-top:40px">Website settings</h2><p class="sub">Change the home page background, services and photos. Changes show on the public site at once.</p>
+<div class="set">
+<div class="panel"><h3>Background picture</h3><div class="bgnow" id="bgNow"></div>
+<form id="bgForm"><input type="file" name="image" accept="image/jpeg,image/png,image/webp" required aria-label="Background picture"><p style="margin-top:10px"><button class="btn sm" type="submit">Use this picture</button> <button class="btn sm red" type="button" id="bgReset">Back to default</button></p></form></div>
+<div class="panel"><h3>Services</h3><ul id="svcList"></ul>
+<form id="svcForm"><label for="sName">New service name</label><input id="sName" maxlength="60" required><label for="sIcon">Emoji (optional)</label><input id="sIcon" maxlength="4"><p style="margin-top:10px"><button class="btn sm" type="submit">Add service</button></p></form></div>
+</div></div>
+<script src="script.js"></script>
+</body></html>

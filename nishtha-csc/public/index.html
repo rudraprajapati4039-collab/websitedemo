@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Nishtha Enterprise – Common Service Center (CSC)</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Mukta:wght@400;600;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header><div class="wrap"><b class="brand">Nishtha Enterprise CSC</b>
+<nav><a href="#services">Services</a><a href="#apply">Apply</a><a href="#contact">Contact</a><a class="cta" href="login.html">CSC Login</a></nav></div></header>
+
+<div class="hero" id="hero"><div class="wrap">
+<div><h1 class="title">Nishtha Enterprise<br>Common Service Center (CSC)</h1><p class="lead">Government and online services, all in one place.</p>
+<p>Aadhaar, PAN, passport, certificates and more. Send your documents online and we will start your work.</p>
+<a class="btn" href="#apply">Apply for a service</a></div>
+<div class="bring"><h3>Keep these ready</h3><ul><li>Aadhaar card (PDF, JPG or PNG)</li><li>PAN card (PDF, JPG or PNG)</li><li>Passport-size photo (JPG or PNG)</li></ul></div>
+</div></div>
+
+<section id="services"><div class="wrap"><h2>Our services</h2><p class="sub">Choose the service you need when you apply.</p><div class="grid" id="svcGrid"></div></div></section>
+
+
+<section id="apply"><div class="wrap"><h2>Apply online</h2><p class="sub">No login needed. All fields marked * are required.</p>
+<form id="reqForm" enctype="multipart/form-data">
+<div class="row"><div><label for="name">Full name *</label><input id="name" name="name" required></div>
+<div><label for="phone">Phone number *</label><input id="phone" name="phone" inputmode="numeric" pattern="[6-9][0-9]{9}" maxlength="10" required></div></div>
+<label for="address">Address *</label><textarea id="address" name="address" rows="2" required></textarea>
+<div class="row"><div><label for="email">Email *</label><input id="email" name="email" type="email" required></div>
+<div><label for="service">Service *</label><select id="service" name="service" required><option value="">Select a service</option></select></div></div>
+<div class="row"><div><label for="aadhaar">Aadhaar card *</label><input id="aadhaar" name="aadhaar" type="file" accept=".pdf,.jpg,.jpeg,.png" required><small>PDF, JPG or PNG, up to 5 MB</small></div>
+<div><label for="pan">PAN card *</label><input id="pan" name="pan" type="file" accept=".pdf,.jpg,.jpeg,.png" required><small>PDF, JPG or PNG, up to 5 MB</small></div></div>
+<label for="photo">Passport-size photo *</label><input id="photo" name="photo" type="file" accept=".jpg,.jpeg,.png" required><small>JPG or PNG, up to 5 MB</small>
+<label for="message">Other message</label><textarea id="message" name="message" rows="3"></textarea>
+<p style="margin-top:18px"><button class="btn" type="submit">Send application</button></p><div id="msg" role="status"></div>
+</form></div></section>
+
+<section id="contact" class="contact"><div class="wrap"><h2>Contact us</h2><p class="sub" style="color:#b9c9de">Visit the center or call us.</p>
+<p><b>Jayeshbhai Prajapati</b><br>Phone: <a href="tel:+918200608242">8200608242</a><br>Vadsar Bridge, Vadodara 390010<br><a href="https://maps.app.goo.gl/XuxoQXPG1F9NHeQs8" target="_blank" rel="noopener">Open location in Google Maps</a></p></div></section>
+<footer>© <span id="yr"></span> Nishtha Enterprise – Common Service Center</footer>
+<script src="script.js"></script>
+</body></html>
